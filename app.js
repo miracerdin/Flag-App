@@ -6,6 +6,7 @@ const countries = async () => {
     const country = await res.json();
     console.log(country);
     country.forEach((x) => {
+      select.innerHTML += `<option>${x.name.common}</option>`;
       console.log(x.name.common);
     });
   } catch (error) {
