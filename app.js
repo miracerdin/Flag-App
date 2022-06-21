@@ -24,7 +24,6 @@ const countriesFetched = async () => {
             languages,
             currencies,
           } = country;
-          body.style.background = url(`${flags[1]}`);
           cardContainer.innerHTML = ` <div class="card" style="width: 18rem;">
                 <img src="${flags[1]}" class="card-img-top" alt="...">
                 <ul class="list-group text-center list-group-flush">
@@ -39,6 +38,8 @@ const countriesFetched = async () => {
                  } ${Object.values(currencies)[0].symbol}</li>
                 </ul>
             </div>`;
+          // body.style.background = `url(${flags[1]}) no-repeat`;
+          // body.style.backgroundSize = "contain";
         }
       });
     });
