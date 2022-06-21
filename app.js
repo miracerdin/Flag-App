@@ -2,6 +2,7 @@ const url = "https://restcountries.com/v3/all";
 const select = document.querySelector("#country");
 const option = document.querySelector(".option");
 const cardContainer = document.querySelector(".card-container");
+const body = document.querySelector("body");
 const countriesFetched = async () => {
   try {
     const res = await fetch(url);
@@ -23,6 +24,7 @@ const countriesFetched = async () => {
             languages,
             currencies,
           } = country;
+          body.style.background = url(`${flags[1]}`);
           cardContainer.innerHTML = ` <div class="card" style="width: 18rem;">
                 <img src="${flags[1]}" class="card-img-top" alt="...">
                 <ul class="list-group text-center list-group-flush">
