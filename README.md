@@ -1,2 +1,3 @@
 # Flag-App
-This app created with async await. 
+I used DOM manipulation and async await and pulled the data with API. 
+[Click me](https://miracerdin.github.io/Flag-App/)
