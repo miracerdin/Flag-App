@@ -3,9 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 #country {
-  background-color: aqua;
-  width: 150px;
+  text-align: center;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
   border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+.reserved {
+  text-align: center;
+  padding: 1rem;
+}
+.buttons {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+.cardContainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+.cardContainer1 img {
+  width: 150px;
+  height: 150px;
+  padding: 1em;
 }
